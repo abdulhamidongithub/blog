@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'blog/bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/style/style.css' %}">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row navbar">
+            <div class="col-12 col-md-6 col-sm-6 navbar-icon"><a href="{% url 'blog' %}">Abdulhamid's Blog</a></div>
+            <div class="col-12 col-md-6 col-sm-6 navbar-link">
+                <div><a href="/about/">About</a></div>
+                <div><a href="{% url 'blog' %}">Blog</a></div>
+                <div><a href="https://t.me/abdulhamidonblog">Channel</a></div>
+            </div>
+        </div>
+        <div class="row blog">
+            <div class="col-12">
+                <h1>Blog</h1>
+            </div>
+        </div>
+        <div class="row main">
+            <div class="col-12 col-md-6 col-sm-6 main-card1">
+                {% for maqola in maqolalar %}
+                <p>{{ maqola.yil }}</p>
+                <h3>{{ maqola.oy }}</h3>
+                <div class="main-card1-link">
+                    <a href="/maqola/{{maqola.id}}"><h6>{{ maqola.oy }}, {{ maqola.yil }}<h6> <h5>{{ maqola.title }}</h5></a>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-12 col-md-6 col-sm-6 main-card2">
+                <h4>NEWSLETTER</h4>
+                <p>Subscribe to <a href="https://t.me/abdulhamidonblog">@abdulhamidonblog</a> telegram channel where I share interesting & useful stuff.</p>
+
+            </div>
+        </div>
+        <div class="row footer">
+            <p>© 2021 Codial</p>
+        </div>
+    </div>
+</body>
+</html>

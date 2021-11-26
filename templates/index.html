@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home/bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'home/style/style.css' %}">
+    <title>Abdulhamid's Blog</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row navbar">
+            <div class="col-12 col-md-6 col-sm-6 navbar-icon"><a href="{% url 'blog' %}">Abdulhamid's Blog</a></div>
+            <div class="col-12 col-md-6 col-sm-6 navbar-link">
+                <div><a href="/about/">About</a></div>
+                <div><a href="{% url 'blog' %}">Blog</a></div>
+                <div><a href="https://t.me/abdulhamidonblog">Channel</a></div>
+            </div>
+        </div>
+        <div class="row header">
+            <div class="col-12 col-md-3 col-sm-12 header-img">
+                <img src="{% static 'rasmlar/Codialda.jpg' %}" alt="">
+            </div>
+            <div class="col-12 col-md-9 col-sm-12 header-text">
+                <h1>Abdulhamid Egamberdiyev</h1>
+                <p>Backend developer</p>
+                <a href="https://github.com/abdulhamidongithub"><img src="{% static 'rasmlar/github.png' %}" alt=""></a>
+                <a href="https://www.instagram.com/abdulhamidoninsta/"><img src="{% static 'rasmlar/IG.png' %}" alt=""></a>
+                <a href="https://www.youtube.com/channel/UC1WFcPmc93SyNhX80iOfrRQ"><img src="{% static 'rasmlar/youtube.png' %}" alt=""></a>
+                <a href="https://www.linkedin.com/in/abdulkhamid-egamberdiev-196789217"><img src="{% static 'rasmlar/linkedin.png' %}" alt=""></a>
+            </div>
+            <div class="col-12 col-md-12 col-sm-12 header-btn">
+                <p>Jaa miyadan chiqib to'g'ri yurakka urmasayam</p>
+                <p>o'qib-o'rganayotganlarimdan uqqanlarim, ojizona fikrlar</p>
+                <a class="btn-1" href="{% url 'blog' %}">Blog</a>
+                <a class="btn-2" href="/about/">About</a>
+            </div>
+            <div class="row footer">
+                <div class="col-12">
+                    <p>© 2021 Codial</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

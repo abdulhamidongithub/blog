@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'about/about style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'about/bootstrap-5.0.2-dist/css/bootstrap.css' %}">
+    <title>About</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row navbar">
+            <div class="col-12 col-md-6 col-sm-6 navbar-icon"><a href="{% url 'blog' %}">Abdulhamid's Blog</a></div>
+            <div class="col-12 col-md-6 col-sm-6 navbar-link">
+                <div><a href="/about/">About</a></div>
+                <div><a href="{% url 'blog' %}">Blog</a></div>
+                <div><a href="https://t.me/abdulhamidonblog">Channel</a></div>
+            </div>
+        </div>
+        <div class="row aboutme">
+            <div class="col-12">
+                <h1>About me</h1>
+            </div>
+        </div>
+        <div class="row main">
+            <div class="col-12">
+                <p>To'liq ismim Abdulhamid Egamberdiyev, yoshim 24 da. Farg'ona shahridagi Codial akademiyasida <b>Backend dasturlash</b> bo'yicha mentorlik qilaman.
+                    <br>
+                    <br>
+                    Asli Koreyadagi Chonnam Milliy Universiteti Biznes boshqaruv (BA) yo'nalishida o'qiyman. Karantin sabab akademik ta'til olib Vatanda ma'lum muddat qolishga majbur bo'ldim. Shu vaqt ichida yaqin do'stlarim taklifi bilan o'zim anchadan beri qiziqib yurgan sohaga kirishga qaror qildim.</p>
+                    <img src="{% static 'rasmlar/Codialda.jpg' %}" alt="">
+                    <h5>Codial, Farg'ona</h5>
+                    <br>
+                    <p>Pandemiya paytida uyga qaytishim ham universitetimizdagi bir dastur sabab amalga oshdi. 20 ta o'zbekistonlik talaba CNU tomonidan tashkillangan dastur orqali Toshkentdagi bir qancha katta-kichik kompaniyalarga ekskursiya qilib u yerdagi ish imkoniyatlarini o'rgandik. CNU ga rahmat!)</p>
+                    <img src="{% static 'rasmlar/Nest Oneda.jpg' %}" alt="">
+                    <h5>Nest One, Toshkent</h5>
+                    <br>
+                    <p>Mani instagramda <b>"Abdulhamid Don insta"</b>, sifatida tanishadi. Albatta, bu hazil. Yaqin do'stlar yoki instagramimdagi tanishlar tushunadigan hazil</p>
+                    <img src="{% static 'rasmlar/Manasda.jpg' %}" alt="">
+                    <h5>Manas restorani, Toshkent</h5>
+                    <br>
+                    <p>O'zim haqimda ma'lumot bermoqchiydim. Ma'lumotlar chalkash, bir-biriga uncha bog'liqmasligining sababi oldin o'zimga yoqqan rasmlarimni tanladim, keyin ularga mos matn yozdim))</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>© 2021 Codial</p>
+        </div>
+    </div>
+</body>
+</html>

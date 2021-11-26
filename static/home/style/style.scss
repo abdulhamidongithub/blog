@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    .navbar{
+        padding-left: 40px;
+        padding-right: 40px;
+        .navbar-icon{
+            a{
+                font-size: 30px;
+                font-weight: bold;
+                text-decoration: none;
+                color: #000;
+            }
+        }
+        .navbar-link{
+            justify-content: end;
+            display: flex;
+            a{
+                text-decoration: none;
+                margin-left: 50px;
+                color: grey;
+            }
+        }
+    }
+    .header{
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-top: 20vh;
+        .header-img{
+            img{
+                width: 170px;
+                height: 170px;
+                border-radius: 50%;
+            }
+        }
+        .header-text{
+            padding-top: 10px;
+            h1{
+                font-weight: bold;
+            }
+            p{
+                font-size: 30px;
+                color:grey;
+            }
+            a{
+                img{
+                    margin-left: 10px;
+                    width: 25px;
+                }
+                img:hover{
+                    transform: scale(1.2);
+                }
+                img:active{
+                    opacity: 70%;
+                    transform: scale(0.9);
+                }
+            }
+        }
+        .header-btn{
+            padding-top: 40px;
+            p{
+                font-size: 20px;
+                color: grey;
+            }
+            .btn-1{
+                text-decoration: none;
+                border: none;
+                border-radius: 10px;
+                padding: 9px 35px;
+                background-color: #1E90FF;
+                color: snow;
+                font-weight: bold;
+            }
+            .btn-1:hover{
+                background-color: #55a4f3;
+                transition: all ease 0.5s;
+            }
+            .btn-2{
+                text-decoration: none;
+                font-weight: bold;
+                background-color: rgba(255, 255, 255, 0);
+                border: 1px solid #1E90FF;
+                margin-left: 20px;
+                padding: 9px 35px;
+                border-radius: 10px;
+                color: #1E90FF;
+
+            }
+            .btn-2:active{                 
+                border: 4px solid rgb(173, 173, 173);
+                background-color: rgb(59, 59, 59);
+                color: snow;
+                font-weight: bold;
+            }
+        }
+        .footer{
+            width: 100%;
+            text-align: center;
+            margin-top: 38vh;
+            p{
+                color: grey;
+            }
+        }
+    }
+}
